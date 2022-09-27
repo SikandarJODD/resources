@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Resources for Development</title>
+
+</head>
+
+<body>
+    <nav class="bg-slate-900 grid col-span-2 grid-flow-col">
+        <div class="flex items-center ml-28">
+            <img src="/main_logo.png" class="w-10 h-10 mt-1" alt="random Images">
+            <h1 class="text-2xl px-3 font-medium  text-slate-200">RE<span class="text-blue-600">DEV</span></h1>
+        </div>
+        <ul class="pr-40 flex justify-end space-x-16  text-white text-xl font-thin py-4 ">
+            <li>Home</li>
+            <li>Resource</li>
+            <li>Templates</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main bg-blue-600 grid content-center ">
+            <div>
+                <div class="text-6xl font-bold  ml-3 px-5">
+                    <span class="text-white ">Useful</span> Resources in OneGO
+                    <br>
+                    Resources for <span class="text-white opacity-100">Development</span>
+                    <br>
+
+                </div>
+                <div class=" card ml-10 my-10 py-10 pl-20 w-4/5 border-solid border-2 rounded-lg border-sky-400">
+                    <ul class="font-medium text-3xl space-y-2  ">
+                        <li class="reveal">Advance JS Library</li>
+                        <li class="reveal">Smoothing Animations </li>
+                        <li class="reveal">Gradient Backgrounds</li>
+                        <li class="reveal">Typo-Graphy</li>
+                        <li class="reveal">Design Templates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" grid content-center">
+                <div class=" main_right">
+                    <img src="/mint.gif" class="main_img rounded-3xl " alt="Main Images" data-tilt>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+        integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const tilt = $('.main_img').tilt({
+            maxTilt: 35,
+            perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+            easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+            scale: 1.05,      // 2 = 200%, 1.5 = 150%, etc..
+            speed: 500,    // Speed of the enter/exit transition.
+            disableAxis: null,   // What axis should be disabled. Can be X or Y.
+            reset: true,   // If the tilt effect has to be reset on exit.
+            glare: true,  // Enables glare effect
+            maxGlare: 1
+        });
+       
+        
+    </script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
